@@ -1,0 +1,9 @@
+[package]
+name = "speed_math"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.30"
+egui = "0.30"
+rand = "0.8.5"
