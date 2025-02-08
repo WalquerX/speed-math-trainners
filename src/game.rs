@@ -362,8 +362,6 @@ mod tests {
             problem.operand2
         );
 
-        // set game to substraction
-        game.current_type = GameType::Subtraction;
         // set level to medium
         game.current_difficulty = GameDifficulty::Medium;
         let problem = game.generate_problem();
@@ -378,8 +376,6 @@ mod tests {
             problem.operand2
         );
 
-        // set game to substraction
-        game.current_type = GameType::Subtraction;
         // set level to hard
         game.current_difficulty = GameDifficulty::Hard;
         let problem = game.generate_problem();
@@ -394,8 +390,6 @@ mod tests {
             problem.operand2
         );
 
-        // set game to substraction
-        game.current_type = GameType::Subtraction;
         // set level to mastery
         game.current_difficulty = GameDifficulty::Mastery;
         let problem = game.generate_problem();
@@ -429,9 +423,6 @@ mod tests {
             problem.operand2
         );
 
-        // set game to multiplication
-        game.current_type = GameType::Multiplication;
-        // set level to medium
         game.current_difficulty = GameDifficulty::Medium;
         let problem = game.generate_problem();
         assert!(
@@ -445,8 +436,6 @@ mod tests {
             problem.operand2
         );
 
-        // set game to multiplication
-        game.current_type = GameType::Multiplication;
         // set level to hard
         game.current_difficulty = GameDifficulty::Hard;
         let problem = game.generate_problem();
@@ -461,8 +450,6 @@ mod tests {
             problem.operand2
         );
 
-        // set game to multiplication
-        game.current_type = GameType::Multiplication;
         // set level to mastery
         game.current_difficulty = GameDifficulty::Mastery;
         let problem = game.generate_problem();

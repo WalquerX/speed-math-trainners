@@ -40,7 +40,6 @@ impl App {
 impl eframe::App for App {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
         egui::TopBottomPanel::top("top_panel").show(ctx, |ui| {
-            // The top panel is often a good place for a menu bar:
 
             egui::menu::bar(ui, |ui| {
                 egui::widgets::global_theme_preference_buttons(ui);
@@ -93,7 +92,6 @@ impl eframe::App for App {
                         self.game.current_difficulty = GameDifficulty::Mastery;
                         self.game.generate_problem();
                     }
-                    // Add other difficulties...
                 });
 
                 egui::widgets::global_theme_preference_buttons(ui);
@@ -134,7 +132,7 @@ impl eframe::App for App {
                             ui.add_space(10.0);
 
                             // Draw 10 stars
-                            //let score = self.session.get_score(game_type, difficulty); // You'll need to implement this
+                            //let score = self.session.get_score(game_type, difficulty);
                             let score = 10u32;
                             for _ in 0..10 {
                                 let star_color = if score >= *threshold {
